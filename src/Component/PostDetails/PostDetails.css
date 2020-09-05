@@ -1,0 +1,38 @@
+#post-details-section{
+    margin-bottom: 50px;
+    background-color: #faf5f5;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    
+}
+#post-details-section:hover{
+    box-shadow: 0 0 8px #706666;
+    border: none;
+}
+.post-details .post-details-img {
+    text-align: center;
+}
+.post-details .post-details-img img{
+    width: 50%;
+}
+.post-comment-section{
+    margin-bottom: 100px;
+}
+.go-back{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px;
+    text-shadow: 1px 2px 2px #ff0000;
+    border: 1px solid #e74949;
+    float: left;
+    border-radius: 5px;
+    color: #33ff00;
+}
+.go-back span{
+    margin: 0 5px;
+ 
+}

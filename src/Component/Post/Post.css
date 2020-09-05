@@ -1,0 +1,14 @@
+.MuiSvgIcon-root:hover{
+    color: #f30e94;
+    transition: all 0.5s;
+}
+.count-like{
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+.extra-style{
+    color: #f30e94;
+    font-weight: bold;
+    cursor: pointer;
+}
+

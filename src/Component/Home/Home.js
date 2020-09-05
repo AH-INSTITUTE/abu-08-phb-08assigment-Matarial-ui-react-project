@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './../../logo.png';
 import './Home.css'
 import { Link } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Post from '../Post/Post';
 const Home = () => {
+    const [post, setPost] = useState([]);
+    useEffect(()=>{
+        const url = 'https://jsonplaceholder.typicode.com/posts';
+        fetch(url)
+        .then(r => r.json())
+        .then(d => setPost(d))
+    } ,[])
     return (
     <Container fixed>
         <header id="header" className="">
@@ -21,7 +28,9 @@ const Home = () => {
             </div>
         </header>
         <main id="main">
-            <Post />
+           {
+               post.map(p => <Post posts={p} key={p.id} />)
+           }
         </main>
     </Container>
     );
