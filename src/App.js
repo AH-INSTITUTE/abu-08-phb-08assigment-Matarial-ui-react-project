@@ -9,6 +9,7 @@ import {
 import Home from './Component/Home/Home';
 import NotMatched from './Component/NotMatched/NotMatched';
 import PostDetails from './Component/PostDetails/PostDetails';
+import About from './Component/About/About';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       <Switch>
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/post-details/:postId">
           <PostDetails />

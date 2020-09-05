@@ -65,7 +65,7 @@ const Post = ({posts}) => {
 
     const history = useHistory();
     const clickpostDetails = (id, userId) => {
-        console.log('object');
+        //console.log('object');
         const url = `/post-details/${id}`
         history.push(url);  
     }

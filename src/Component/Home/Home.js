@@ -22,7 +22,7 @@ const Home = () => {
                 <ul>
                     <li><Link to="/home" className="cursor-pointer menu-item">Home</Link></li>
                     <li> <Link to="/about" className="cursor-pointer menu-item">About</Link></li>
-                    <li><Link to="/Login" className="cursor-pointer menu-item">Login</Link></li>
+                    <li><Link to="/login" className="cursor-pointer menu-item">Login</Link></li>
                     <li> <Link to="/singup" className="cursor-pointer menu-item">Sing Up</Link></li>
                 </ul> 
             </div>
